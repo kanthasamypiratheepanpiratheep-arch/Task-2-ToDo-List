@@ -1,0 +1,334 @@
+
+/* =====================================
+   SHOEASE E-COMMERCE WEBSITE
+   COMPLETE RESPONSIVE CSS
+===================================== */
+
+
+/* 1. GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* 2. NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107;
+}
+
+#cartButton {
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 9px 20px;
+}
+
+
+/* 3. HERO SECTION */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    font-size: 17px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* 4. PRODUCTS SECTION */
+
+#products {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#products h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PRODUCT IMAGES */
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-card .card-title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+}
+
+.price {
+    color: #e63946;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+
+/* ADD TO CART BUTTON */
+
+.add-cart {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background-color: #198754;
+    border-color: #198754;
+    transform: scale(1.05);
+}
+
+
+/* 5. CONTACT SECTION */
+
+#contact {
+    max-width: 800px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#contact h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+}
+
+#contact form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+#contact form button {
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+#formMessage {
+    font-weight: bold;
+}
+
+
+/* 6. FOOTER */
+
+footer {
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 20px !important;
+}
+
+
+/* 7. RESPONSIVE DESIGN - TABLETS */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 320px;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    #products h2,
+    #contact h2 {
+        font-size: 26px;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+
+    #contact form {
+        padding: 20px;
+    }
+
+    .navbar .btn {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+
+}
+
+
+/* 8. RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 480px) {
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .hero {
+        min-height: 280px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero .btn {
+        padding: 10px 22px;
+    }
+
+    #products h2,
+    #contact h2 {
+        font-size: 24px;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .product-card .card-title {
+        font-size: 19px;
+    }
+
+    #contact form {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+}
+
+
+/* 9. SMALL SCREEN IMPROVEMENT */
+
+@media (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .add-cart {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+}
